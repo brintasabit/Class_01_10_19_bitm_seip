@@ -103,5 +103,10 @@ namespace CoffeeShopLayer
             order.Show();
             order.BringToFront();
         }
+
+        private void Customer_Load(object sender, EventArgs e)
+        {
+            itemComboBox.DataSource = _customerManager.ShowComboBox();
+        }
     }
 }

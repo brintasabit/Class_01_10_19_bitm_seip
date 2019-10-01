@@ -118,5 +118,22 @@ namespace CoffeeShopLayer.Repository
             sqlConn.Close();
             return false;
         }
+        public DataTable ShowComboBox()
+        {
+
+            string conn = @"Server=PC-301-29\SQLEXPRESS; Database=CoffeeShop; Integrated Security=true";
+            SqlConnection sqlConn = new SqlConnection(conn);
+            string command = @"select Name,ID from Item";
+            SqlCommand sqlCommand = new SqlCommand(command, sqlConn);
+            sqlConn.Open();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+
+            sqlConn.Close();
+            return dataTable;
+
+
+        }
     }
 }

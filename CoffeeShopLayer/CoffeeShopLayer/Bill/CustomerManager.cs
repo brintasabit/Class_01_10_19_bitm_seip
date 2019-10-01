@@ -33,5 +33,10 @@ namespace CoffeeShopLayer.Bill
         {
             return _customerRepository.DeleteCustomer(id);
         }
+
+        public DataTable ShowComboBox()
+        {
+            return _customerRepository.ShowComboBox();
+        }
     }
 }
