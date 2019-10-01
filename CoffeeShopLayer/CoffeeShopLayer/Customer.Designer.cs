@@ -160,13 +160,13 @@
             // 
             this.itemComboBox.DataSource = this.itemBindingSource;
             this.itemComboBox.DisplayMember = "Name";
+            this.itemComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.itemComboBox.FormattingEnabled = true;
-            this.itemComboBox.Location = new System.Drawing.Point(76, 122);
+            this.itemComboBox.Location = new System.Drawing.Point(64, 122);
             this.itemComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.itemComboBox.Name = "itemComboBox";
-            this.itemComboBox.Size = new System.Drawing.Size(56, 21);
+            this.itemComboBox.Size = new System.Drawing.Size(68, 21);
             this.itemComboBox.TabIndex = 4;
-            this.itemComboBox.Text = "Select An Item";
             this.itemComboBox.ValueMember = "Id";
             // 
             // itemBindingSource
